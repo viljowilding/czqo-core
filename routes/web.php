@@ -33,7 +33,7 @@ Route::get('/privacy', function() { return redirect(route('policies'), 301); })-
 //Route::view('/changelog', 'changelog')->name('changelog');
 Route::get('/events', 'Events\EventController@index')->name('events.index');
 Route::get('/events/{slug}', 'Events\EventController@viewEvent')->name('events.view');
-Route::view('/branding', 'branding')->name('branding');
+//Route::view('/branding', 'branding')->name('branding');
 
 //About
 Route::prefix('about')->group(function () {
